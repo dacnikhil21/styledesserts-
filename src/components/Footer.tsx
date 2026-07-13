@@ -11,15 +11,24 @@ export default function Footer() {
       textAlign: "center"
     }}>
       <div className="container">
-        <h2 className="text-h3" style={{ marginBottom: "var(--spacing-md)", color: "var(--color-golden-dunes)" }}>Style Desert Camp</h2>
+        <h2 className="text-h3" style={{ marginBottom: "var(--spacing-md)", color: "var(--color-golden-dunes)" }}>Style Desert Camp<br/>with swimming pool</h2>
         <p style={{ maxWidth: "400px", margin: "0 auto var(--spacing-xl)", opacity: 0.8 }}>
-          Experience the authentic soul of Rajasthan in ultimate luxury.
+          Experience the ultimate luxury under the starry skies of the Thar Desert. 
+          An award-winning sanctuary.
         </p>
 
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.5rem", marginBottom: "var(--spacing-xl)" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+            <MapPin size={18} />
+            <span style={{ fontSize: "0.875rem" }}>RDS Road, Sam Sand Dunes, Jaisalmer Rajasthan 345001</span>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+            <Phone size={18} />
+            <span style={{ fontSize: "0.875rem" }}>+91 8209879234</span>
+          </div>
+        </div>
+
         <div style={{ display: "flex", justifyContent: "center", gap: "var(--spacing-lg)", marginBottom: "var(--spacing-xl)" }}>
-          <Link href="#" style={{ display: "flex", alignItems: "center", gap: "0.5rem", transition: "color var(--transition-fast)" }} className="hover-gold">
-            <MapPin size={20} /> <span style={{ fontSize: "0.875rem" }}>Jaisalmer, Rajasthan</span>
-          </Link>
           <Link href="#" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }} className="hover-gold">
             <MessageCircle size={20} /> <span style={{ fontSize: "0.875rem" }}>WhatsApp</span>
           </Link>

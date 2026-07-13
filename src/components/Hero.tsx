@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import Image from "next/image";
 import styles from "./Hero.module.css";
 import gsap from "gsap";
 import MagneticButton from "./MagneticButton";
@@ -52,13 +51,14 @@ export default function Hero() {
   return (
     <section className={styles.heroSection} ref={containerRef}>
       <div className={styles.backgroundWrapper}>
-        <Image
-          src="/images/hero.png"
-          alt="Golden Desert Sunrise at Style Desert Camp"
-          fill
-          priority
+        <video
+          src="/homepagehero.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
           className={styles.backgroundImage}
-          sizes="100vw"
+          style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
         <div className={styles.overlay}></div>
       </div>

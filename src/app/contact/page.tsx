@@ -33,8 +33,7 @@ export default function ContactPage() {
                 <div className={styles.iconWrapper}><Phone size={24} /></div>
                 <div>
                   <h4 className="text-h4">Phone & WhatsApp</h4>
-                  <p>+91 00000 00000</p>
-                  <p>+91 00000 00000</p>
+                  <p>+91 8209879234</p>
                 </div>
               </div>
               
@@ -50,7 +49,7 @@ export default function ContactPage() {
                 <div className={styles.iconWrapper}><MapPin size={24} /></div>
                 <div>
                   <h4 className="text-h4">Location</h4>
-                  <p>Sam Sand Dunes, Jaisalmer,<br />Rajasthan 345001, India</p>
+                  <p>RDS Road, Sam Sand Dunes,<br />Jaisalmer Rajasthan 345001</p>
                 </div>
               </div>
 

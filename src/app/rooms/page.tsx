@@ -7,7 +7,7 @@ import styles from "./Rooms.module.css";
 import Footer from "@/components/Footer";
 import { MessageCircle, ArrowRight } from "lucide-react";
 
-const WHATSAPP_NUMBER = "910000000000";
+const WHATSAPP_NUMBER = "918209879234";
 
 const roomsData = [
   {
