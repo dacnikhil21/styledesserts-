@@ -32,8 +32,11 @@ export default function Navbar() {
     { name: "Contact Us", href: "/contact" },
   ];
 
+  const isInnerPage = pathname !== "/";
+  const shouldApplyScrolledStyle = isScrolled || isInnerPage;
+
   return (
-    <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
+    <nav className={`${styles.navbar} ${shouldApplyScrolledStyle ? styles.scrolled : ""}`}>
       <div className={`container ${styles.navContainer}`}>
         <Link href="/" className={styles.logo}>
           STYLE DESERT CAMP
@@ -51,9 +54,9 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Link href="/rooms" className={`btn-primary ${styles.bookBtn}`}>
+          <a href="https://wa.me/918209879234?text=Hello%20Style%20Desert%20Camp!%20I%20would%20like%20to%20book%20a%20stay." target="_blank" rel="noopener noreferrer" className={`btn-primary ${styles.bookBtn}`}>
             Book Now
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Toggle */}

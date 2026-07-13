@@ -46,6 +46,23 @@
   gap: var(--spacing-xl);
 }
 
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .detailsBtn, .whatsappBtn {
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+  .imageWrapper {
+    height: 200px;
+  }
+}
+
 @media (min-width: 768px) {
   .grid {
     grid-template-columns: 1fr 1fr;

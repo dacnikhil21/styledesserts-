@@ -29,6 +29,26 @@ export default function ExplorePage() {
       title: "Desert Jeep Safari",
       description: "Experience the thrill of dune bashing in a 4x4 jeep, an adrenaline-pumping ride across the vast expanse of the Thar Desert.",
       image: "/images/photo-10.jpg",
+    },
+    {
+      title: "Premium Tent Stays",
+      description: "Relax in our luxurious Swiss tents, blending traditional Rajasthani design with modern comfort and attached washrooms.",
+      image: "/images/photo-4.jpg",
+    },
+    {
+      title: "Campfire Evenings",
+      description: "Gather around the warm campfire during chilly desert nights, sharing stories and enjoying authentic snacks.",
+      image: "/images/photo-5.jpg",
+    },
+    {
+      title: "Serene Morning Walks",
+      description: "Wake up early to witness the undisturbed beauty of the dunes in the soft morning light.",
+      image: "/images/photo-11.jpg",
+    },
+    {
+      title: "Oasis Pool Relaxation",
+      description: "Cool off during the desert afternoons in our stunning swimming pool.",
+      image: "/images/photo-2.jpg",
     }
   ];
 

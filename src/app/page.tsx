@@ -13,9 +13,9 @@ export default function Home() {
       <Atmosphere />
       <Hero />
       <WhyChooseUs />
-      <ExperienceTimeline />
       <AccommodationCards />
       <Gallery />
+      <ExperienceTimeline />
       <Footer />
     </main>
   );

@@ -146,3 +146,11 @@ html {
 .enhance-image {
   filter: contrast(1.15) saturate(1.15) brightness(1.05);
 }
+
+@media (max-width: 768px) {
+  .btn-primary, .btn-secondary {
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+    border-radius: 4px;
+  }
+}

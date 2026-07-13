@@ -103,7 +103,9 @@ export default function AccommodationCards() {
                   <Link href={`/room/${room.id}`} className="btn-secondary" style={{ color: 'var(--color-dark-charcoal)', borderColor: 'var(--color-dark-charcoal)' }}>
                     View Details
                   </Link>
-                  <button className="btn-primary">Book Now</button>
+                  <a href="https://wa.me/918209879234?text=Hello%20Style%20Desert%20Camp!%20I%20would%20like%20to%20book%20a%20stay." target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    WHATSAPP
+                  </a>
                 </div>
               </div>
             </div>
