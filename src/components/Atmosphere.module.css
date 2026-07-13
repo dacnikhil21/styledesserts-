@@ -1,0 +1,33 @@
+.atmosphereContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 50; /* Sits above everything but ignores clicks */
+  overflow: hidden;
+}
+
+.canvas {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.heatWave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><filter id="heat"><feTurbulence type="fractalNoise" baseFrequency="0.01 0.05" numOctaves="2" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G"/></filter><rect width="100%" height="100%" filter="url(%23heat)" opacity="0.1"/></svg>');
+  opacity: 0.15;
+  mix-blend-mode: overlay;
+  animation: shimmer 15s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100px); }
+}

@@ -1,0 +1,71 @@
+.heroSection {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 0; /* Handled by GSAP */
+}
+
+.backgroundWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.backgroundImage {
+  object-fit: cover;
+  transform-origin: center;
+}
+
+/* Gradient overlay for cinematic mood and text readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(42, 42, 42, 0.2) 0%,
+    rgba(42, 42, 42, 0.6) 100%
+  );
+  z-index: 2;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: var(--color-soft-white);
+  padding: 0 var(--spacing-lg);
+  max-width: 1200px;
+}
+
+.highlight {
+  font-style: italic;
+  color: var(--color-warm-beige);
+}
+
+.subtitle {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-ivory);
+  line-height: 2;
+  opacity: 0.9;
+}
+
+.ctaGroup {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,72 @@
+.main {
+  background-color: var(--color-soft-white);
+  min-height: 100vh;
+  padding-top: 120px; /* Offset for fixed navbar */
+}
+
+.header {
+  text-align: center;
+  padding: var(--spacing-xl) 0;
+}
+
+.experiencesList {
+  padding: var(--spacing-2xl) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+}
+
+.experienceCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .experienceCard {
+    flex-direction: row;
+    gap: var(--spacing-2xl);
+  }
+
+  .experienceCard.reversed {
+    flex-direction: row-reverse;
+  }
+}
+
+.imageWrapper {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.imageWrapper:hover .image {
+  transform: scale(1.05);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--spacing-xl) 0;
+}
+
+.content h2 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-dark-charcoal);
+}
+
+.content p {
+  color: #555;
+  font-size: 1.1rem;
+}
