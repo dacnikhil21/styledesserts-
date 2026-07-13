@@ -11,8 +11,14 @@ export default function Hero() {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const buttonsRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
+    // Force mobile autoplay
+    if (videoRef.current) {
+      videoRef.current.play().catch(err => console.log("Autoplay blocked:", err));
+    }
+
     const tl = gsap.timeline({ defaults: { ease: "power4.out", duration: 1.5 } });
 
     // Initial slow reveal
@@ -52,13 +58,14 @@ export default function Hero() {
     <section className={styles.heroSection} ref={containerRef}>
       <div className={styles.backgroundWrapper}>
         <video
+          ref={videoRef}
           src="/homepagehero.mp4"
           autoPlay
           loop
           muted
           playsInline
           className={styles.backgroundImage}
-          style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+          style={{ objectFit: 'cover', width: '100%', height: '100%', pointerEvents: 'none' }}
         />
         <div className={styles.overlay}></div>
       </div>
