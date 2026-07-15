@@ -1,0 +1,334 @@
+/* ─── Backdrop ───────────────────────────────────────────── */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1000;
+  pointer-events: none;
+  transition: background 0.45s ease;
+}
+
+.backdropOpen {
+  background: rgba(0, 0, 0, 0.65);
+  pointer-events: all;
+}
+
+/* ─── Modal Panel ───────────────────────────────────────── */
+.drawer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  height: 90vh;
+  width: 95vw;
+  max-width: 1000px;
+  background: #faf8f5;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1001;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  pointer-events: auto;
+}
+
+.drawerOpen {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+/* ─── Header ─────────────────────────────────────────────── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.75rem;
+  border-bottom: 1px solid rgba(209, 191, 174, 0.4);
+  background: #faf8f5;
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-dark-charcoal);
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.closeBtn {
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-dark-charcoal);
+  transition: background 0.2s ease, transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.closeBtn:hover {
+  background: rgba(0, 0, 0, 0.07);
+  transform: scale(1.1);
+}
+
+/* ─── Scrollable Content ─────────────────────────────────── */
+.content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* ─── Slider ─────────────────────────────────────────────── */
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  min-height: 40vh; /* Make it large */
+  overflow: hidden;
+  background: #000;
+}
+
+.slidesWrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+  will-change: transform;
+}
+
+.slide {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.slideImg {
+  object-fit: contain; /* Ensure full photo is visible without cropping */
+  pointer-events: none;
+}
+
+/* ─── Arrow Buttons ──────────────────────────────────────── */
+.arrowBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.arrowBtn:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.leftArrow {
+  left: 14px;
+}
+
+.rightArrow {
+  right: 14px;
+}
+
+/* ─── Thumbnails ─────────────────────────────────────────── */
+.thumbnails {
+  display: flex;
+  gap: 8px;
+  padding: 12px 1.75rem;
+  background: #f0ece7;
+  border-bottom: 1px solid rgba(209, 191, 174, 0.4);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.thumbnails::-webkit-scrollbar {
+  display: none;
+}
+
+.thumbBtn {
+  position: relative;
+  width: 72px;
+  height: 54px;
+  flex-shrink: 0;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  background: none;
+  padding: 0;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.thumbBtn:hover {
+  transform: scale(1.05);
+}
+
+.thumbActive {
+  border-color: var(--color-golden-dunes, #c9a84c);
+}
+
+.thumbImg {
+  object-fit: cover;
+}
+
+/* ─── Info Section ───────────────────────────────────────── */
+.infoSection {
+  padding: 1.75rem;
+  padding-bottom: 3rem; /* extra padding so bottom text isn't cut off by footer */
+}
+
+.priceRow {
+  margin-bottom: 1rem;
+}
+
+.priceTag {
+  display: inline-block;
+  background: rgba(201, 168, 76, 0.12);
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #555;
+  letter-spacing: 0.03em;
+}
+
+.priceTag strong {
+  color: var(--color-dark-charcoal);
+  font-size: 1.05rem;
+}
+
+.description {
+  font-size: 0.97rem;
+  color: #5a5a5a;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(209, 191, 174, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.subTitle {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-dark-charcoal);
+  margin-bottom: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ─── Features Grid ──────────────────────────────────────── */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1.25rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.featureItem svg {
+  color: var(--color-golden-dunes, #c9a84c);
+  flex-shrink: 0;
+}
+
+.detailsAndBooking {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+/* ─── Footer ─────────────────────────────────────────────── */
+.footer {
+  padding: 1rem 1.75rem;
+  border-top: 1px solid rgba(209, 191, 174, 0.4);
+  background: #fff;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.whatsappBookBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.9rem 2rem;
+  background: var(--color-dark-charcoal);
+  color: var(--color-soft-white);
+  border: 1px solid var(--color-dark-charcoal);
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.whatsappBookBtn svg {
+  color: #25D366; /* Keep whatsapp icon green */
+}
+
+.whatsappBookBtn:hover {
+  background: transparent;
+  color: var(--color-dark-charcoal);
+}
+
+/* ─── Responsive ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .drawer {
+    width: 100%;
+    height: 100dvh;
+    border-radius: 0;
+    max-width: none;
+  }
+  
+  .sliderContainer {
+    min-height: 35vh;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+  
+  .detailsAndBooking {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .footer {
+    justify-content: center;
+  }
+}

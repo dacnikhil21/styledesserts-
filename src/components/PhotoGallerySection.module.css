@@ -1,0 +1,180 @@
+/* ─── Section ──────────────────────────────────────────────── */
+.section {
+  padding: var(--spacing-2xl) 0;
+  background: var(--color-soft-white);
+}
+
+/* ─── Grid: 5 columns on desktop, 2 on mobile ──────────────── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* ─── Card base ─────────────────────────────────────────────── */
+.card {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  cursor: pointer;
+  background: #111;
+}
+
+/* ─── Image Wrapper ─────────────────────────────────────────── */
+.imageWrap {
+  position: absolute;
+  inset: 0;
+}
+
+.img {
+  object-fit: cover;
+  transition: transform 0.65s ease;
+}
+
+.card:hover .img {
+  transform: scale(1.07);
+}
+
+/* ─── Room Card Overlay ─────────────────────────────────────── */
+.roomOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.1) 55%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  transition: background 0.35s ease;
+}
+
+.card:hover .roomOverlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.25) 65%, transparent 100%);
+}
+
+.roomLabel {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+.roomSublabel {
+  font-size: 0.75rem;
+  color: var(--color-golden-dunes, #c9a84c);
+  margin-top: 2px;
+  letter-spacing: 0.05em;
+}
+
+.viewBtn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transform: translateY(4px);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .viewBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Photo Card Overlay ─────────────────────────────────────── */
+.photoOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.card:hover .photoOverlay {
+  background: rgba(0,0,0,0.32);
+}
+
+.zoomIcon {
+  font-size: 2rem;
+  color: #fff;
+  opacity: 0;
+  transform: scale(0.7);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  line-height: 1;
+}
+
+.card:hover .zoomIcon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ─── Lightbox ───────────────────────────────────────────────── */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.lightboxClose {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+  z-index: 2001;
+}
+
+.lightboxClose:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.lightboxImage {
+  position: relative;
+  width: min(90vw, 900px);
+  height: min(85vh, 700px);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.lightboxImg {
+  object-fit: contain;
+}

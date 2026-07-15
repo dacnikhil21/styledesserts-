@@ -20,15 +20,20 @@
 @media (min-width: 1024px) {
   .card {
     flex-direction: row;
-    height: 450px;
+    min-height: 380px;
   }
 }
 
 .imageWrapper {
   position: relative;
   flex: 1;
-  min-height: 300px;
   overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .imageWrapper {
+    flex: 0 0 45%;
+  }
 }
 
 .image {
@@ -38,6 +43,42 @@
 
 .card:hover .image {
   transform: scale(1.05);
+}
+
+.viewGalleryHint {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.4s ease;
+  pointer-events: none;
+}
+
+.card:hover .viewGalleryHint {
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.viewGalleryHint span {
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.55rem 1.2rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  backdrop-filter: blur(2px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.card:hover .viewGalleryHint span {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .priceTag {
@@ -121,7 +162,8 @@
     margin-bottom: 0.5rem;
   }
   .imageWrapper {
-    min-height: 200px;
+    aspect-ratio: 16/10;
+    min-height: auto;
   }
   .priceTag {
     padding: 0.3rem 0.6rem;

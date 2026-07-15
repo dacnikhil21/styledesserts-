@@ -16,9 +16,16 @@ export default function Atmosphere() {
     let width = window.innerWidth;
     let height = window.innerHeight;
     canvas.width = width;
-    canvas.height = height;
+    interface Particle {
+      x: number;
+      y: number;
+      vx: number;
+      vy: number;
+      radius: number;
+      opacity: number;
+    }
 
-    const particles: any[] = [];
+    const particles: Particle[] = [];
     const numParticles = width < 768 ? 40 : 100;
 
     for (let i = 0; i < numParticles; i++) {

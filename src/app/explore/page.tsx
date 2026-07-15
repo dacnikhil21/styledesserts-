@@ -11,39 +11,39 @@ export const metadata = {
 export default function ExplorePage() {
   const experiences = [
     {
-      title: "Golden Camel Safari",
-      description: "Traverse the majestic sand dunes on camelback just as the sun sets, painting the sky in hues of gold and crimson.",
-      image: "/images/photo-7.jpg", 
-    },
-    {
-      title: "Cultural Folk Evenings",
-      description: "Immerse yourself in the rich Rajasthani heritage with traditional Kalbelia dance and soulful folk music under the stars.",
-      image: "/images/photo-8.jpg",
-    },
-    {
-      title: "Starry Night Dining",
-      description: "Enjoy our pure vegetarian delicacies crafted by expert chefs, served in an exclusive setup surrounded by lanterns in the open desert.",
-      image: "/images/photo-9.jpg",
-    },
-    {
-      title: "Desert Jeep Safari",
-      description: "Experience the thrill of dune bashing in a 4x4 jeep, an adrenaline-pumping ride across the vast expanse of the Thar Desert.",
-      image: "/images/photo-10.jpg",
+      title: "Romantic Candle Dinner",
+      description: "A private, magical evening in the dunes. Enjoy a custom candlelit setup with your loved one, complete with traditional decor, camels resting nearby, and the beautiful desert sunset.",
+      image: "/images/candle-3.jpg",
     },
     {
       title: "Premium Tent Stays",
-      description: "Relax in our luxurious Swiss tents, blending traditional Rajasthani design with modern comfort and attached washrooms.",
-      image: "/images/photo-4.jpg",
+      description: "Relax in our luxurious Swiss tents, blending traditional Rajasthani design with modern comfort. Enjoy plush beds, premium amenities, and attached luxury washrooms.",
+      image: "/images/luxury-tent-3.jpg",
+    },
+    {
+      title: "Starry Night & Milky Way",
+      description: "Experience the breathtaking beauty of the Thar desert at night. With zero light pollution, stargazing under the magnificent Milky Way becomes an unforgettable memory.",
+      image: "/images/night-1.jpg",
     },
     {
       title: "Campfire Evenings",
-      description: "Gather around the warm campfire during chilly desert nights, sharing stories and enjoying authentic snacks.",
-      image: "/images/photo-5.jpg",
+      description: "Gather around a private warm campfire during chilly desert nights, sharing stories, enjoying authentic snacks, and watching the stars.",
+      image: "/images/candle-4.jpg",
     },
     {
-      title: "Serene Morning Walks",
-      description: "Wake up early to witness the undisturbed beauty of the dunes in the soft morning light.",
-      image: "/images/photo-11.jpg",
+      title: "Luxury Washrooms",
+      description: "We believe luxury shouldn't be compromised in the desert. Our tents feature premium attached bathrooms with modern fixtures, hot water, and elegant tile work.",
+      image: "/images/luxury-tent-1.jpg",
+    },
+    {
+      title: "Green Tent Camping",
+      description: "For the adventurous souls, experience our specialized green tents set directly on the dunes, offering an intimate connection with the desert night sky.",
+      image: "/images/night-2.jpg",
+    },
+    {
+      title: "Golden Camel Safari",
+      description: "Traverse the majestic sand dunes on camelback just as the sun sets, painting the sky in hues of gold and crimson.",
+      image: "/images/photo-7.jpg",
     },
     {
       title: "Oasis Pool Relaxation",

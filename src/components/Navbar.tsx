@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./Navbar.module.css";
 import { Menu, X } from "lucide-react";
-import gsap from "gsap";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);

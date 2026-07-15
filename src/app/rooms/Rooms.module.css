@@ -69,11 +69,6 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 
 .card {
   background: white;
@@ -103,6 +98,42 @@
 
 .card:hover .image {
   transform: scale(1.05);
+}
+
+.viewHint {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.4s ease;
+  pointer-events: none;
+}
+
+.card:hover .viewHint {
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.viewHint span {
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.55rem 1.2rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  backdrop-filter: blur(2px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.card:hover .viewHint span {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .categoryBadge {
