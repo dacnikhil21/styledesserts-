@@ -32,7 +32,7 @@ export default function Navbar() {
   ];
 
   const isInnerPage = pathname !== "/";
-  const shouldApplyScrolledStyle = isScrolled || isInnerPage;
+  const shouldApplyScrolledStyle = isScrolled || isInnerPage || mobileMenuOpen;
 
   return (
     <nav className={`${styles.navbar} ${shouldApplyScrolledStyle ? styles.scrolled : ""}`}>
