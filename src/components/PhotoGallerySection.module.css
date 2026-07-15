@@ -1,7 +1,13 @@
 /* ─── Section ──────────────────────────────────────────────── */
 .section {
-  padding: var(--spacing-2xl) 0;
+  padding: var(--spacing-xl) 0;
   background: var(--color-soft-white);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: var(--spacing-2xl) 0;
+  }
 }
 
 /* ─── Grid: 5 columns on desktop, 2 on mobile ──────────────── */

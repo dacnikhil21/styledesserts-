@@ -105,14 +105,14 @@ export default function PhotoGallerySection() {
   return (
     <>
       <section className={styles.section} ref={sectionRef}>
-        <div className="container">
-          <div className="text-center" style={{ marginBottom: "var(--spacing-xl)" }}>
-            <h2 className="text-h2">Moments at Style Desert Camp</h2>
-            <p className="text-body" style={{ margin: "0 auto" }}>
-              Real experiences, real memories — explore our rooms and experiences through the lens.
-            </p>
-          </div>
+        <div className="container text-center">
+          <h2 className="text-h2">Moments at Style Desert Camp</h2>
+          <p className="text-body" style={{ margin: "0 auto 2rem" }}>
+            Real experiences, real memories — explore our rooms and experiences through the lens.
+          </p>
+        </div>
 
+        <div className="container">
           <div className={styles.grid}>
             {/* First 2: Room category cards */}
             {roomCards.map((room, i) => (
