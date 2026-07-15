@@ -69,6 +69,8 @@ button {
 .text-h2 {
   font-size: clamp(2rem, 5vw, 4rem);
   margin-bottom: var(--spacing-lg);
+  color: #1a1a1a;
+  font-weight: 500;
 }
 
 .text-h3 {
@@ -78,7 +80,7 @@ button {
 .text-body {
   font-size: 1.125rem;
   max-width: 65ch;
-  color: #4A4A4A;
+  color: #222222;
 }
 
 /* Layout Utilities */
@@ -91,6 +93,12 @@ button {
 
 .section-padding {
   padding: var(--spacing-2xl) 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: var(--spacing-xl) 0;
+  }
 }
 
 .text-center {

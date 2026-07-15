@@ -80,7 +80,7 @@ export default function WhyChooseUs() {
       <div className="container">
         <div className="text-center">
           <h2 className="text-h2">Why Choose Style Desert Camp</h2>
-          <p className="text-body" style={{ margin: "0 auto", marginBottom: "var(--spacing-xl)" }}>
+          <p className="text-body" style={{ margin: "0 auto 2rem" }}>
             A sanctuary of peace in the heart of the Thar Desert.
             Every detail is crafted to provide a truly royal experience.
           </p>
