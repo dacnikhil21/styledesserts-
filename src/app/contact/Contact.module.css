@@ -187,7 +187,7 @@
 @media (max-width: 768px) {
   .infoCard { padding: 1.5rem; }
   .formColumn { padding: 1.5rem; }
-  .contactSection { margin-top: -40px; padding: 2rem 0; }
+  .contactSection { margin-top: 0; padding: 2rem 0; }
   .heroContent { margin-top: 20px; }
   .heroContent p { font-size: 1rem !important; padding: 0 1rem; }
   .hero { height: auto; min-height: 350px; padding: 3rem 0; background-attachment: scroll; }
