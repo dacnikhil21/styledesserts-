@@ -70,6 +70,13 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       <div className={`${styles.mobileNav} ${mobileMenuOpen ? styles.mobileOpen : ""}`}>
+        <button
+          className={styles.closeMobileNavBtn}
+          onClick={() => setMobileMenuOpen(false)}
+          aria-label="Close menu"
+        >
+          <X size={32} />
+        </button>
         {navLinks.map((link) => (
           <Link
             key={link.name}
