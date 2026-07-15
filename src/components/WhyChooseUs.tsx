@@ -19,16 +19,6 @@ const reasons = [
     image: "/images/camel.png",
     description: "Explore the vast Thar desert on an authentic safari over golden dunes.",
   },
-  {
-    title: "Pure Vegetarian Dining",
-    image: "/images/food.png",
-    description: "Savor the rich flavors of traditional Rajasthani cuisine in an exquisite setting.",
-  },
-  {
-    title: "Traditional Cultural Nights",
-    image: "/images/hero.png",
-    description: "Experience the vibrant heritage of Rajasthan through captivating folk performances.",
-  },
 ];
 
 export default function WhyChooseUs() {
