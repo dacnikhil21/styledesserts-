@@ -4,6 +4,7 @@ import ExperienceTimeline from "@/components/ExperienceTimeline";
 import AccommodationCards from "@/components/AccommodationCards";
 import PhotoGallerySection from "@/components/PhotoGallerySection";
 import Atmosphere from "@/components/Atmosphere";
+import BookingWidget from "@/components/BookingWidget";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <AccommodationCards />
       <PhotoGallerySection />
       <ExperienceTimeline />
+      <BookingWidget />
       <Footer />
     </main>
   );

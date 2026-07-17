@@ -1,0 +1,87 @@
+.bookingWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: var(--color-dark-charcoal);
+  position: relative;
+  z-index: 10;
+}
+
+.bookingContainer {
+  background-color: #d8d8d8; /* light gray from reference */
+  padding: 1.5rem;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  border-top: 4px solid var(--color-golden-dunes);
+}
+
+.inputsRow {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.inputGroup {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #a3a3a3; /* darker gray background for inputs */
+  border-radius: 4px;
+  padding: 0 0.5rem;
+}
+
+.dateInput {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 0.75rem 0.5rem;
+  color: #333;
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.dateInput::placeholder {
+  color: #333;
+}
+
+.calendarIcon {
+  color: #fff;
+  margin-left: 0.25rem;
+}
+
+.bookBtn {
+  background-color: #e35d28; /* orange from reference */
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.bookBtn:hover {
+  background-color: #c94f20;
+}
+
+.modifyLink {
+  text-align: center;
+  color: #e35d28;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.modifyLink:hover {
+  color: #c94f20;
+}
