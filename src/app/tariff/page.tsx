@@ -66,7 +66,7 @@ export default function TariffPage() {
           <div className={styles.cardsGrid}>
             <div className={styles.pricingCard}>
               <div className={styles.cardImageWrapper}>
-                <Image src="/activities/tent-stay.jpeg" alt="Super Deluxe Tent" fill className={styles.cardImage} />
+                <Image src="https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Super Deluxe Tent" fill className={styles.cardImage} unoptimized />
               </div>
               <div className={styles.cardContent}>
                 <div>
@@ -112,7 +112,7 @@ export default function TariffPage() {
           <div className={styles.cardsGrid}>
             <div className={styles.pricingCard}>
               <div className={styles.cardImageWrapper}>
-                <Image src="/activities/tent-stay.jpeg" alt="Super Deluxe Tent Peak Season" fill className={styles.cardImage} />
+                <Image src="https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Super Deluxe Tent Peak Season" fill className={styles.cardImage} unoptimized />
               </div>
               <div className={styles.cardContent}>
                 <div>
