@@ -1,0 +1,348 @@
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-dark-charcoal);
+  color: var(--color-soft-white);
+  font-family: var(--font-primary), sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 70vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1542401886-65d6c61db217?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20, 0.4),
+    var(--color-dark-charcoal)
+  );
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  padding: 0 var(--spacing-xl);
+  max-width: 800px;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  color: var(--color-soft-white);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.1;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: var(--spacing-2xl);
+  letter-spacing: 0.02em;
+}
+
+/* Pricing Section Container */
+.pricingContainer {
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seasonBlock {
+  margin-bottom: var(--spacing-4xl);
+}
+
+.seasonHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.seasonTitle {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-golden-dunes);
+  margin-bottom: var(--spacing-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.seasonDates {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Cards Grid */
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-2xl);
+  justify-content: center;
+}
+
+/* Pricing Card */
+.pricingCard {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricingCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: radial-gradient(
+    800px circle at 50% 0%,
+    rgba(212, 175, 55, 0.06),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.pricingCard:hover {
+  transform: translateY(-8px);
+  border-color: rgba(212, 175, 55, 0.3);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.pricingCard:hover::before {
+  opacity: 1;
+}
+
+.cardImageWrapper {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.pricingCard:hover .cardImage {
+  transform: scale(1.05);
+}
+
+.cardContent {
+  padding: var(--spacing-2xl) var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--color-soft-white);
+  margin-bottom: var(--spacing-xl);
+  letter-spacing: 0.02em;
+}
+
+.priceContainer {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.price {
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: var(--color-golden-dunes);
+  line-height: 1;
+  margin-bottom: var(--spacing-xs);
+  letter-spacing: -0.02em;
+}
+
+.perUnit {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Facilities Section */
+.facilitiesSection {
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  background: #111111; /* Even darker than charcoal for contrast */
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.facilitiesContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.facilitiesHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.facilitiesTitle {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--color-soft-white);
+  letter-spacing: 0.02em;
+}
+
+.facilitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.facilityItem {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  transition: all 0.3s ease;
+}
+
+.facilityItem:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(212, 175, 55, 0.2);
+  transform: translateY(-2px);
+}
+
+.facilityIcon {
+  color: var(--color-golden-dunes);
+  flex-shrink: 0;
+}
+
+.facilityText {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 300;
+}
+
+/* Bottom CTA */
+.bottomCta {
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  text-align: center;
+  background: linear-gradient(
+    to top,
+    rgba(212, 175, 55, 0.05),
+    var(--color-dark-charcoal)
+  );
+}
+
+.ctaContent {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ctaHeading {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--color-soft-white);
+  margin-bottom: var(--spacing-2xl);
+  line-height: 1.2;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Button overrides for luxury feel */
+.btnPrimaryLuxury {
+  background: var(--color-golden-dunes);
+  color: #111;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btnPrimaryLuxury:hover {
+  background: #f6c84c;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+}
+
+.btnSecondaryLuxury {
+  background: transparent;
+  color: var(--color-soft-white);
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btnSecondaryLuxury:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--color-soft-white);
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+  
+  .price {
+    font-size: 2.5rem;
+  }
+  
+  .ctaHeading {
+    font-size: 2rem;
+  }
+  
+  .pricingCard {
+    padding: var(--spacing-2xl) var(--spacing-xl);
+  }
+}
