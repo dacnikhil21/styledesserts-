@@ -49,6 +49,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  verification: {
+    google: "google92d2b63222ff41b0",
+  },
   openGraph: {
     title: "Style Desert Camp | Luxury Desert Camp in Jaisalmer with Swimming Pool",
     description:
