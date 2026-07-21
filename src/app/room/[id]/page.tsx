@@ -8,6 +8,32 @@ import { Check, Calendar, Users, BedDouble, Bath, Wind, ArrowLeft, Star, Coffee 
 
 const roomsData = [
   {
+    id: "super-deluxe-tent",
+    name: "Super Deluxe Tent",
+    capacity: "2 Guests",
+    bed: "King Size Bed",
+    bathroom: "Attached Modern Bath",
+    ac: "Air Conditioned",
+    meals: "Breakfast & Dinner Included",
+    description:
+      "Our Super Deluxe Tent offers authentic desert elegance with supreme comfort — featuring handcrafted wooden furnishings, plush bedding, attached modern bathroom, and private veranda.",
+    images: [
+      "/images/super-deluxe-tent.jpg",
+      "/images/super-deluxe-tent-2.jpg",
+      "/images/luxury-tent-1.jpg",
+      "/images/luxury-tent-2.jpg",
+    ],
+    coverIndex: 0,
+    amenities: [
+      { icon: <Wind size={20}/>, text: "Air Conditioning" },
+      { icon: <Bath size={20}/>, text: "Modern Bathroom" },
+      { icon: <Check size={20}/>, text: "Pure Veg Breakfast & Dinner" },
+      { icon: <Check size={20}/>, text: "Camel Safari Included" },
+      { icon: <Check size={20}/>, text: "Folk Dance & DJ Night" },
+      { icon: <Check size={20}/>, text: "Private Veranda" },
+    ]
+  },
+  {
     id: "luxury-tent",
     name: "Luxury Tent",
     capacity: "2 Guests",

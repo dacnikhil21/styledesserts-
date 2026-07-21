@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('https://images.unsplash.com/photo-1542401886-65d6c61db217?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+  background-image: url('/images/photo-1.jpg');
   background-size: cover;
   background-position: center;
   text-align: center;
