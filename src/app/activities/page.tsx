@@ -129,11 +129,16 @@ export default function ActivitiesPage() {
           <p className={styles.ctaDesc}>
             Book your stay today and experience all these amazing activities in the heart of Jaisalmer.
           </p>
-          <Link href="/contact" style={{ textDecoration: "none" }}>
+          <a 
+            href="https://wa.me/918209879234?text=Hello%20Style%20Desert%20Camp!%20I%20would%20like%20to%20book%20an%20adventure%20activity%20experience." 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            style={{ textDecoration: "none" }}
+          >
             <MagneticButton type="button" className="btn-primary" style={{ margin: "0 auto" }}>
-              Book Your Experience
+              Book Your Experience via WhatsApp
             </MagneticButton>
-          </Link>
+          </a>
         </div>
       </section>
 

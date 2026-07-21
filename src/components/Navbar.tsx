@@ -98,6 +98,16 @@ export default function Navbar() {
             {link.name}
           </Link>
         ))}
+        <a
+          href="https://wa.me/918209879234?text=Hello%20Style%20Desert%20Camp!%20I%20would%20like%20to%20book%20a%20stay."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary"
+          style={{ marginTop: "1rem", padding: "0.85rem 2rem", textDecoration: "none" }}
+          onClick={() => setMobileMenuOpen(false)}
+        >
+          Book Now via WhatsApp
+        </a>
       </div>
     </nav>
   );

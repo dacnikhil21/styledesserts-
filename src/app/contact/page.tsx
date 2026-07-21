@@ -1,13 +1,10 @@
+"use client";
+
 import React from "react";
 import styles from "./Contact.module.css";
 import Footer from "@/components/Footer";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import MagneticButton from "@/components/MagneticButton";
-
-export const metadata = {
-  title: "Contact Us | Style Desert Camp",
-  description: "Get in touch to book your premium desert experience in Jaisalmer.",
-};
 
 export default function ContactPage() {
   return (
@@ -35,7 +32,11 @@ export default function ContactPage() {
                 <div className={styles.iconWrapper}><Phone size={22} /></div>
                 <div>
                   <h4 className="text-h5" style={{ color: "var(--color-soft-white)", marginBottom: "0.25rem" }}>Phone & WhatsApp</h4>
-                  <p>+91 8209879234</p>
+                  <p>
+                    <a href="tel:+918209879234" style={{ color: "inherit", textDecoration: "none" }}>+91 8209879234</a>
+                    {" • "}
+                    <a href="https://wa.me/918209879234?text=Hello%20Style%20Desert%20Camp!%20I%20have%20an%20inquiry." target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-golden-dunes)", textDecoration: "underline" }}>Chat on WhatsApp</a>
+                  </p>
                 </div>
               </div>
               
@@ -43,7 +44,7 @@ export default function ContactPage() {
                 <div className={styles.iconWrapper}><Mail size={22} /></div>
                 <div>
                   <h4 className="text-h5" style={{ color: "var(--color-soft-white)", marginBottom: "0.25rem" }}>Email</h4>
-                  <p>bookings@styledesertcamp.com</p>
+                  <p><a href="mailto:bookings@styledesertcamp.com" style={{ color: "inherit", textDecoration: "none" }}>bookings@styledesertcamp.com</a></p>
                 </div>
               </div>
               
@@ -68,7 +69,10 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <div className={styles.formColumn}>
-            <form className={styles.form}>
+            <form className={styles.form} onSubmit={(e) => {
+              e.preventDefault();
+              window.open("https://wa.me/918209879234?text=Hello%20Style%20Desert%20Camp!%20I%20would%20like%20to%20send%20an%20inquiry.", "_blank");
+            }}>
               <h2 className="text-h3" style={{ marginBottom: "var(--spacing-xl)", color: "var(--color-dark-charcoal)" }}>Send an Inquiry</h2>
               
               <div className={styles.inputRow}>
@@ -93,8 +97,8 @@ export default function ContactPage() {
                 <textarea id="message" rows={5} placeholder="I would like to inquire about..." required></textarea>
               </div>
 
-              <MagneticButton type="button" className={`btn-primary ${styles.submitBtn}`}>
-                Send Message
+              <MagneticButton type="submit" className={`btn-primary ${styles.submitBtn}`}>
+                Send Inquiry via WhatsApp
               </MagneticButton>
             </form>
           </div>

@@ -42,22 +42,22 @@ export default function Footer() {
             <MapPin size={18} />
             <span style={{ fontSize: "0.875rem" }}>RDS Road, Sam Sand Dunes, Jaisalmer Rajasthan 345001</span>
           </a>
-          <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+          <a href="tel:+918209879234" style={{ display: "flex", alignItems: "center", gap: "0.5rem", textDecoration: "none", color: "inherit" }} className="hover-gold">
             <Phone size={18} />
             <span style={{ fontSize: "0.875rem" }}>+91 8209879234</span>
-          </div>
+          </a>
         </div>
 
         <div style={{ display: "flex", justifyContent: "center", gap: "var(--spacing-lg)", marginBottom: "var(--spacing-xl)" }}>
-          <Link href="#" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }} className="hover-gold">
+          <a href="https://wa.me/918209879234?text=Hello%20Style%20Desert%20Camp!%20I%20would%20like%20to%20inquire%20about%20booking." target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "0.5rem", textDecoration: "none", color: "inherit" }} className="hover-gold">
             <MessageCircle size={20} /> <span style={{ fontSize: "0.875rem" }}>WhatsApp</span>
-          </Link>
-          <Link href="#" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }} className="hover-gold">
+          </a>
+          <a href="https://wa.me/918209879234?text=Hello%20Style%20Desert%20Camp!" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "0.5rem", textDecoration: "none", color: "inherit" }} className="hover-gold">
             <Camera size={20} /> <span style={{ fontSize: "0.875rem" }}>Instagram</span>
-          </Link>
-          <Link href="#" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }} className="hover-gold">
-            <Phone size={20} /> <span style={{ fontSize: "0.875rem" }}>Contact</span>
-          </Link>
+          </a>
+          <a href="tel:+918209879234" style={{ display: "flex", alignItems: "center", gap: "0.5rem", textDecoration: "none", color: "inherit" }} className="hover-gold">
+            <Phone size={20} /> <span style={{ fontSize: "0.875rem" }}>Call Us</span>
+          </a>
         </div>
 
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "var(--spacing-lg)", width: "100%", fontSize: "0.75rem", opacity: 0.7, textTransform: "uppercase", letterSpacing: "0.1em", display: "flex", flexDirection: "column", gap: "0.5rem", alignItems: "center" }}>

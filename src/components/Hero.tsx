@@ -83,8 +83,19 @@ export default function Hero() {
         </p>
         
         <div className={styles.ctaGroup} ref={buttonsRef}>
-          <MagneticButton className="btn-primary" data-cursor="view">Book Your Desert Escape</MagneticButton>
-          <MagneticButton className="btn-secondary">Explore Experiences</MagneticButton>
+          <MagneticButton
+            className="btn-primary"
+            data-cursor="view"
+            onClick={() => window.open("https://wa.me/918209879234?text=Hello%20Style%20Desert%20Camp!%20I%20would%20like%20to%20book%20a%20stay.", "_blank")}
+          >
+            Book Your Desert Escape
+          </MagneticButton>
+          <MagneticButton
+            className="btn-secondary"
+            onClick={() => window.location.href = "/explore"}
+          >
+            Explore Experiences
+          </MagneticButton>
         </div>
       </div>
     </section>

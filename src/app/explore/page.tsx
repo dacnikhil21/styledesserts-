@@ -79,6 +79,15 @@ export default function ExplorePage() {
               <div className={styles.content}>
                 <h2 className="text-h2">{exp.title}</h2>
                 <p className="text-body">{exp.description}</p>
+                <a
+                  href={`https://wa.me/918209879234?text=${encodeURIComponent(`Hello Style Desert Camp! I would like to book the ${exp.title} experience.`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                  style={{ marginTop: "1.25rem", textDecoration: "none", display: "inline-block", fontSize: "0.8rem", padding: "0.75rem 1.5rem" }}
+                >
+                  Book Experience via WhatsApp
+                </a>
               </div>
             </div>
           ))}
