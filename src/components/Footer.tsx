@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Camera, MapPin, MessageCircle, Phone } from "lucide-react";
 
 export default function Footer() {
@@ -10,7 +11,14 @@ export default function Footer() {
       padding: "var(--spacing-2xl) var(--spacing-lg) var(--spacing-lg)",
       textAlign: "center"
     }}>
-      <div className="container">
+      <div className="container" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <Image
+          src="/images/logo.png"
+          alt="Style Desert Camp Logo"
+          width={70}
+          height={70}
+          style={{ objectFit: "contain", borderRadius: "50%", marginBottom: "1rem", border: "1px solid rgba(201, 151, 91, 0.4)" }}
+        />
         <h2 className="text-h3" style={{ marginBottom: "var(--spacing-md)", color: "var(--color-golden-dunes)" }}>Style Desert Camp<br/>with swimming pool</h2>
         <p style={{ maxWidth: "400px", margin: "0 auto var(--spacing-xl)", opacity: 0.8 }}>
           Experience the ultimate luxury under the starry skies of the Thar Desert. 

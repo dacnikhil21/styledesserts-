@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import styles from "./Navbar.module.css";
 import { Menu, X } from "lucide-react";
 
@@ -39,8 +40,16 @@ export default function Navbar() {
   return (
     <nav className={`${styles.navbar} ${shouldApplyScrolledStyle ? styles.scrolled : ""}`}>
       <div className={`container ${styles.navContainer}`}>
-        <Link href="/" className={styles.logo}>
-          STYLE DESERT CAMP
+        <Link href="/" className={styles.logoWrapper}>
+          <Image
+            src="/images/logo.png"
+            alt="Style Desert Camp Logo"
+            width={40}
+            height={40}
+            className={styles.logoImg}
+            priority
+          />
+          <span className={styles.logo}>STYLE DESERT CAMP</span>
         </Link>
 
         {/* Desktop Nav */}
