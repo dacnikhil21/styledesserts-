@@ -112,7 +112,7 @@ export default function TariffPage() {
           <div className={styles.cardsGrid}>
             <div className={styles.pricingCard}>
               <div className={styles.cardImageWrapper}>
-                <Image src="https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Super Deluxe Tent Peak Season" fill className={styles.cardImage} unoptimized />
+                <Image src="/images/super-deluxe-tent.jpg" alt="Super Deluxe Tent Peak Season" fill className={styles.cardImage} sizes="(max-width: 768px) 100vw, 33vw" />
               </div>
               <div className={styles.cardContent}>
                 <div>

@@ -87,6 +87,14 @@ const roomsData = [
   },
 ];
 
+export function generateStaticParams() {
+  return roomsData.map((room) => ({
+    id: room.id,
+  }));
+}
+
+export const dynamicParams = true;
+
 export default async function RoomPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const room = roomsData.find(r => r.id === id);
