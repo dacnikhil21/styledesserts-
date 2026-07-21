@@ -15,6 +15,7 @@ const inter = Inter({
 
 import SmoothScroll from "@/components/SmoothScroll";
 import Navbar from "@/components/Navbar";
+import SplashScreen from "@/components/SplashScreen";
 
 export const metadata: Metadata = {
   title: "Style Desert Camp | Luxury Desert Experience in Jaisalmer",
@@ -29,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
       <body>
+        <SplashScreen />
         <Navbar />
         <SmoothScroll>
           {children}

@@ -1,0 +1,41 @@
+/* Pure Video Splash Screen */
+.splashContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 99999;
+  background-color: #0b0a08;
+  overflow: hidden;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity, transform, visibility;
+  cursor: pointer;
+}
+
+.splashContainer.exiting {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.03);
+  pointer-events: none;
+}
+
+.videoWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.bgVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
