@@ -60,8 +60,11 @@ export default function Footer() {
           </Link>
         </div>
 
-        <div style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "var(--spacing-lg)", fontSize: "0.75rem", opacity: 0.5, textTransform: "uppercase", letterSpacing: "0.1em" }}>
-          © {new Date().getFullYear()} Style Desert Camp. All Rights Reserved.
+        <div style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "var(--spacing-lg)", width: "100%", fontSize: "0.75rem", opacity: 0.7, textTransform: "uppercase", letterSpacing: "0.1em", display: "flex", flexDirection: "column", gap: "0.5rem", alignItems: "center" }}>
+          <div>© {new Date().getFullYear()} Style Desert Camp. All Rights Reserved.</div>
+          <div style={{ fontSize: "0.75rem", opacity: 0.85, textTransform: "none", letterSpacing: "0.05em" }}>
+            Developed by <a href="https://codtechitsolutions.com" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-golden-dunes)", textDecoration: "underline", fontWeight: 500 }}>Codtech IT Solutions</a>
+          </div>
         </div>
       </div>
       <style>{`
