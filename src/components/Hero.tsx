@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import Image from "next/image";
 import styles from "./Hero.module.css";
 import gsap from "gsap";
 import MagneticButton from "./MagneticButton";
@@ -72,14 +71,6 @@ export default function Hero() {
       </div>
 
       <div className={styles.content}>
-        <Image
-          src="/images/logo.png"
-          alt="Style Desert Camp Logo"
-          width={85}
-          height={85}
-          className={styles.brandLogo}
-          priority
-        />
         <h1 className="text-hero" ref={titleRef} style={{ lineHeight: 1.1 }}>
           <SplitText text="Experience Rajasthan" />
           <br />
