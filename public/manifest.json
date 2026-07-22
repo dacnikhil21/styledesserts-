@@ -1,0 +1,21 @@
+{
+  "name": "Style Desert Camp Jaisalmer",
+  "short_name": "Style Desert Camp",
+  "description": "Experience luxury desert camping in Jaisalmer at Style Desert Camp. Enjoy premium tents, camel safari, jeep safari, Rajasthani cultural nights, bonfire, and swimming pool in Sam Sand Dunes.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0B0D",
+  "theme_color": "#C9975B",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -12,11 +12,13 @@ const reasons = [
   {
     title: "Luxury Swiss Tents",
     image: "/images/tent.png",
+    altText: "Luxury Swiss Tent at Sam Sand Dunes Jaisalmer",
     description: "Spacious, elegantly designed tents combining traditional aesthetics with modern comforts.",
   },
   {
     title: "Camel & Jeep Safari",
     image: "/images/camel.png",
+    altText: "Camel Safari and Jeep Safari in Jaisalmer Desert",
     description: "Explore the vast Thar desert on an authentic safari over golden dunes.",
   },
 ];
@@ -86,7 +88,7 @@ export default function WhyChooseUs() {
               <div className={styles.imageWrapper}>
                 <Image
                   src={reason.image}
-                  alt={reason.title}
+                  alt={reason.altText}
                   fill
                   className={styles.image}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"

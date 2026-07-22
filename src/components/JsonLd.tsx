@@ -3,11 +3,12 @@ import React from "react";
 export default function JsonLd() {
   const jsonLdData = {
     "@context": "https://schema.org",
-    "@type": ["Hotel", "Resort", "Campground"],
+    "@type": ["LodgingBusiness", "Hotel", "Resort", "Campground"],
     "name": "Style Desert Camp",
-    "alternateName": ["Style Desert Camp Jaisalmer", "Style Desert Camp with Swimming Pool"],
-    "description": "Luxury Swiss Tents, Camel Safaris, Swimming Pool, and Folk Performances in Sam Sand Dunes, Jaisalmer, Rajasthan.",
+    "alternateName": ["Style Desert Camp Jaisalmer", "Style Desert Camp Sam Sand Dunes"],
+    "description": "Experience luxury desert camping in Jaisalmer at Style Desert Camp. Enjoy premium tents, camel safari, jeep safari, Rajasthani cultural nights, bonfire, delicious food, sunset views, and unforgettable stays at Sam Sand Dunes.",
     "url": "https://www.styledesertcamp.in",
+    "email": "styledesertcamp@gmail.com",
     "logo": "https://www.styledesertcamp.in/images/logo.png",
     "image": [
       "https://www.styledesertcamp.in/images/super-deluxe-tent.jpg",

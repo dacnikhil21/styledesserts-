@@ -6,8 +6,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Activities & Sports | Style Desert Camp",
-  description: "Explore our premium desert activities, camel safaris, cultural programs, and luxury stays.",
+  title: "Desert Activities & Safaris | Camel Safari & Jeep Safari Jaisalmer",
+  description: "Experience thrilling desert adventures in Jaisalmer: Camel Safari in Sam Sand Dunes, Jeep Dune Bashing, Rajasthani Folk Dance, Live Music, and Stargazing under the Thar Desert stars.",
 };
 
 const activities = [

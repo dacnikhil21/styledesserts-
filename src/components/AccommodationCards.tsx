@@ -125,7 +125,7 @@ export default function AccommodationCards() {
               <div className={styles.imageWrapper}>
                 <Image
                   src={room.images[room.coverIndex]}
-                  alt={room.name}
+                  alt={`${room.name} - Luxury Desert Camp in Jaisalmer at Sam Sand Dunes`}
                   fill
                   className={styles.image}
                   sizes="(max-width: 1024px) 100vw, 50vw"

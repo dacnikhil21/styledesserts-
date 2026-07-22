@@ -51,14 +51,14 @@ const roomCards = [
 
 
 const photoCards = [
-  { id: "p1", src: "/images/night-1.jpg", alt: "Stargazing under the Milky Way" },
-  { id: "p2", src: "/images/night-2.jpg", alt: "Green tent under desert stars" },
-  { id: "p3", src: "/images/night-3.jpg", alt: "Silhouettes pointing at Milky Way" },
-  { id: "p4", src: "/images/candle-3.jpg", alt: "Candle night dinner with camels" },
-  { id: "p5", src: "/images/candle-4.jpg", alt: "Campfire dinner in the desert" },
-  { id: "p6", src: "/images/luxury-tent-3.jpg", alt: "Luxury tent interior" },
-  { id: "p7", src: "/images/luxury-tent-4.jpg", alt: "Luxury tent bedroom" },
-  { id: "p8", src: "/images/luxury-tent-1.jpg", alt: "Luxury tent bathroom" },
+  { id: "p1", src: "/images/night-1.jpg", alt: "Stargazing under the Milky Way at Sam Sand Dunes Jaisalmer" },
+  { id: "p2", src: "/images/night-2.jpg", alt: "Luxury Swiss Tent Stay under Jaisalmer Desert Stars" },
+  { id: "p3", src: "/images/night-3.jpg", alt: "Stargazing and Milky Way View at Style Desert Camp Jaisalmer" },
+  { id: "p4", src: "/images/candle-3.jpg", alt: "Romantic Candle Night Dinner with Camels in Jaisalmer" },
+  { id: "p5", src: "/images/candle-4.jpg", alt: "Desert Bonfire and Campfire Dinner at Sam Sand Dunes" },
+  { id: "p6", src: "/images/luxury-tent-3.jpg", alt: "Luxury Tent Interior at Style Desert Camp Jaisalmer" },
+  { id: "p7", src: "/images/luxury-tent-4.jpg", alt: "Royal Swiss Tent Bedroom Jaisalmer" },
+  { id: "p8", src: "/images/luxury-tent-1.jpg", alt: "Luxury AC Tent Bathroom Jaisalmer" },
 ];
 
 export default function PhotoGallerySection() {

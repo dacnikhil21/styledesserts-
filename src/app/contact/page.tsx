@@ -48,13 +48,14 @@ export default function ContactPage() {
                 </div>
               </div>
               
-              <div className={styles.infoItem}>
+              <a href="https://share.google/7QNmz34kg697oFV4A" target="_blank" rel="noopener noreferrer" className={styles.infoItem} style={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}>
                 <div className={styles.iconWrapper}><MapPin size={22} /></div>
                 <div>
-                  <h4 className="text-h5" style={{ color: "var(--color-soft-white)", marginBottom: "0.25rem" }}>Location</h4>
+                  <h4 className="text-h5" style={{ color: "var(--color-soft-white)", marginBottom: "0.25rem" }}>Location & Directions</h4>
                   <p>RDS Road, Sam Sand Dunes,<br />Jaisalmer Rajasthan 345001</p>
+                  <span style={{ fontSize: "0.85rem", color: "var(--color-golden-dunes)", textDecoration: "underline", marginTop: "0.25rem", display: "inline-block" }}>Get Directions on Google Maps →</span>
                 </div>
-              </div>
+              </a>
 
               <div className={styles.infoItem}>
                 <div className={styles.iconWrapper}><Clock size={22} /></div>

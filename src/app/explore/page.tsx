@@ -4,8 +4,8 @@ import styles from "./Explore.module.css";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Explore | Style Desert Camp",
-  description: "Discover our premium desert experiences, from camel safaris to cultural evenings.",
+  title: "Photo Gallery & Experiences | Style Desert Camp Jaisalmer",
+  description: "Explore photo gallery and desert experiences at Style Desert Camp Jaisalmer. Luxury Swiss tents, camel safaris, dune bashing, stargazing, and candle night dinners at Sam Sand Dunes.",
 };
 
 export default function ExplorePage() {

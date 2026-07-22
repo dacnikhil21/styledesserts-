@@ -18,8 +18,8 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Premium Tariff | Style Desert Camp",
-  description: "Transparent pricing for unforgettable luxury desert experiences at Style Desert Camp Jaisalmer.",
+  title: "Tariff & Package Rates | Style Desert Camp Jaisalmer",
+  description: "Explore luxury desert camp tariffs and package rates at Sam Sand Dunes Jaisalmer. Transparent pricing for Royal Swiss Tents, Camel Safari, Jeep Safari, and Candle Night Dinners.",
 };
 
 const includedFacilities = [

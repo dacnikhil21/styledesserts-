@@ -113,7 +113,7 @@ export default function RoomsPage() {
                   <div className={styles.imageWrapper}>
                     <Image
                       src={room.images[room.coverIndex]}
-                      alt={room.name}
+                      alt={`${room.name} - Luxury Desert Camp in Jaisalmer at Sam Sand Dunes`}
                       fill
                       className={`${styles.image} enhance-image`}
                       sizes="(max-width: 768px) 100vw, 50vw"
