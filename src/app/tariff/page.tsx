@@ -66,11 +66,11 @@ export default function TariffPage() {
           <div className={styles.cardsGrid}>
             <div className={styles.pricingCard}>
               <div className={styles.cardImageWrapper}>
-                <Image src="/images/super-deluxe-tent.jpg" alt="Super Deluxe Tent" fill className={styles.cardImage} sizes="(max-width: 768px) 100vw, 33vw" />
+                <Image src="/images/super-luxury-tent-1.jpg" alt="Super Luxury Tent" fill className={styles.cardImage} sizes="(max-width: 768px) 100vw, 33vw" />
               </div>
               <div className={styles.cardContent}>
                 <div>
-                  <h3 className={styles.cardTitle}>Super Deluxe Tent</h3>
+                  <h3 className={styles.cardTitle}>Super Luxury Tent</h3>
                   <div className={styles.priceContainer}>
                     <div className={styles.price}>₹3,500</div>
                     <div className={styles.perUnit}>Per Tent</div>
@@ -112,11 +112,11 @@ export default function TariffPage() {
           <div className={styles.cardsGrid}>
             <div className={styles.pricingCard}>
               <div className={styles.cardImageWrapper}>
-                <Image src="/images/super-deluxe-tent.jpg" alt="Super Deluxe Tent Peak Season" fill className={styles.cardImage} sizes="(max-width: 768px) 100vw, 33vw" />
+                <Image src="/images/super-luxury-tent-1.jpg" alt="Super Luxury Tent Peak Season" fill className={styles.cardImage} sizes="(max-width: 768px) 100vw, 33vw" />
               </div>
               <div className={styles.cardContent}>
                 <div>
-                  <h3 className={styles.cardTitle}>Super Deluxe Tent</h3>
+                  <h3 className={styles.cardTitle}>Super Luxury Tent</h3>
                   <div className={styles.priceContainer}>
                     <div className={styles.price}>₹7,500</div>
                     <div className={styles.perUnit}>Per Tent</div>

@@ -10,10 +10,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 const reasons = [
   {
-    title: "Luxury Swiss Tents",
-    image: "/images/tent.png",
-    altText: "Luxury Swiss Tent at Sam Sand Dunes Jaisalmer",
-    description: "Spacious, elegantly designed tents combining traditional aesthetics with modern comforts.",
+    title: "Super Luxury Tent",
+    image: "/images/super-luxury-tent-1.jpg",
+    altText: "Super Luxury Tent at Sam Sand Dunes Style Desert Camp Jaisalmer",
+    description: "Spacious, elegantly designed super luxury tents combining traditional Rajasthani heritage with modern comforts.",
   },
   {
     title: "Camel & Jeep Safari",

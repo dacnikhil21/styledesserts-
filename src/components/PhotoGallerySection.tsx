@@ -11,6 +11,26 @@ gsap.registerPlugin(ScrollTrigger);
 
 const roomCards = [
   {
+    id: "super-deluxe-tent",
+    name: "Super Luxury Tent",
+    capacity: "2 Guests",
+    bed: "King Size Bed",
+    bathroom: "Attached Modern Bath",
+    ac: "Air Conditioned",
+    meals: "Breakfast & Dinner Included",
+    description:
+      "Our Super Luxury Tent offers authentic desert elegance with supreme comfort — featuring handcrafted wooden furnishings, plush bedding, attached modern bathroom, and private veranda.",
+    images: [
+      "/images/super-luxury-tent-1.jpg",
+      "/images/super-luxury-tent-2.jpg",
+      "/images/super-luxury-tent-3.jpg",
+      "/images/super-luxury-tent-4.jpg",
+      "/images/super-luxury-tent-5.jpg",
+      "/images/super-luxury-tent-6.jpg",
+    ],
+    coverIndex: 0,
+  },
+  {
     id: "luxury-tent",
     name: "Luxury Tent",
     capacity: "2 Guests",
@@ -51,14 +71,14 @@ const roomCards = [
 
 
 const photoCards = [
-  { id: "p1", src: "/images/night-1.jpg", alt: "Stargazing under the Milky Way at Sam Sand Dunes Jaisalmer" },
-  { id: "p2", src: "/images/night-2.jpg", alt: "Luxury Swiss Tent Stay under Jaisalmer Desert Stars" },
-  { id: "p3", src: "/images/night-3.jpg", alt: "Stargazing and Milky Way View at Style Desert Camp Jaisalmer" },
-  { id: "p4", src: "/images/candle-3.jpg", alt: "Romantic Candle Night Dinner with Camels in Jaisalmer" },
-  { id: "p5", src: "/images/candle-4.jpg", alt: "Desert Bonfire and Campfire Dinner at Sam Sand Dunes" },
-  { id: "p6", src: "/images/luxury-tent-3.jpg", alt: "Luxury Tent Interior at Style Desert Camp Jaisalmer" },
-  { id: "p7", src: "/images/luxury-tent-4.jpg", alt: "Royal Swiss Tent Bedroom Jaisalmer" },
-  { id: "p8", src: "/images/luxury-tent-1.jpg", alt: "Luxury AC Tent Bathroom Jaisalmer" },
+  { id: "p1", src: "/images/super-luxury-tent-1.jpg", alt: "Super Luxury Tent Bedroom View at Style Desert Camp Jaisalmer" },
+  { id: "p2", src: "/images/super-luxury-tent-2.jpg", alt: "Super Luxury Tent Interior with Swan Decor at Sam Sand Dunes" },
+  { id: "p3", src: "/images/super-luxury-tent-3.jpg", alt: "Royal Super Luxury Tent Setup Jaisalmer" },
+  { id: "p4", src: "/images/super-luxury-tent-4.jpg", alt: "Super Luxury Tent Attached Modern Bathroom Jaisalmer" },
+  { id: "p5", src: "/images/super-luxury-tent-5.jpg", alt: "Super Luxury Tent Sitting Area Jaisalmer" },
+  { id: "p6", src: "/images/super-luxury-tent-6.jpg", alt: "Super Luxury Tent Canvas Ceiling Jaisalmer" },
+  { id: "p7", src: "/images/night-1.jpg", alt: "Stargazing under the Milky Way at Sam Sand Dunes Jaisalmer" },
+  { id: "p8", src: "/images/candle-3.jpg", alt: "Romantic Candle Night Dinner with Camels in Jaisalmer" },
 ];
 
 export default function PhotoGallerySection() {

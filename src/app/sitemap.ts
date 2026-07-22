@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
     "/rooms",
+    "/room/super-luxury-tent",
     "/room/super-deluxe-tent",
     "/room/luxury-tent",
     "/room/candle-night-dinner",
